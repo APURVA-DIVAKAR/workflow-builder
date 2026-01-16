@@ -4,10 +4,10 @@ from app.routers import chat
 
 app = FastAPI(title="Workflow Builder Backend")
 
-# ✅ CORS FIX (THIS IS THE IMPORTANT PART)
+#  CORS FIX 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allow frontend
+    allow_origins=["*"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
